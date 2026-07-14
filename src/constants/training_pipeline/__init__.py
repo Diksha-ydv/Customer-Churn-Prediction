@@ -1,3 +1,5 @@
+import os 
+
 '''Defining some constants'''
 TARGET_COLUMN = "Churn"
 DATA_FILE_NAME = "customer_churn_data.csv"
@@ -14,6 +16,13 @@ DATA_INGESTION_DATABASE_NAME = "Diksha"
 DATA_INGESTION_COLLECTION_NAME = "Customer_Churn_Data"
 
 '''Defining some constants for data validation'''
+DATA_VALIDATION_DIR = "Data Validation"
+DATA_VALIATION_VALID_DIR = "Valid"
+DATA_VALIDATION_INVALID_DIR = "Invalid"
+DATA_VALIDATION_DRIFT_REPORT_DIR = "Drift Report"
+DATA_VALIDATION_DRIFT_REPORT_DIR_NAME = "report.yaml"
+
+SCHEMA_FILE_PATH = os.path.join("Data Schema","schema.yaml")
 
 
 '''Defining some constants for data transformation'''
