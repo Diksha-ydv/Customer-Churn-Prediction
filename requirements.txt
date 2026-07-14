@@ -3,4 +3,7 @@ pandas
 numpy 
 matplotlib
 seaborn
--e .
+#-e .
+
+pymongo[srv]==3.12
+python-dotenv 
