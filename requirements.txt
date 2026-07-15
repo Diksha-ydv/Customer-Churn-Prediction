@@ -12,3 +12,4 @@ pyyaml
 xgboost 
 catboost 
 imblearn
+flask
