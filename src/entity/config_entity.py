@@ -51,5 +51,39 @@ class DataValidationConfig:
         self.drift_report_file_path = os.path.join(self.data_validation_dir,training_pipeline.DATA_VALIDATION_DRIFT_REPORT_DIR,
                                                    training_pipeline.DATA_VALIDATION_DRIFT_REPORT_DIR_NAME)
         
+
+class DataTransformationConfig:
+    def __init__(self,training_pipeline_config:TrainingPipelineConfig):
+        self.training_pipeline_config = training_pipeline_config
+
+        self.data_transformation_dir = os.path.join(self.training_pipeline_config.artifact_dir,training_pipeline.DATA_TRANSFORMATION_DIR)
+        self.data_transformation_transformed_dir = os.path.join(
+            self.data_transformation_dir,training_pipeline.DATA_TRANSFORMATION_TRANSFORMED_DIR)
+        self.transformed_train_file_path = os.path.join(
+            self.data_transformation_transformed_dir,training_pipeline.TRAIN_FILE_NAME.replace("csv","npy"))
+        self.transformed_test_file_path = os.path.join(self.data_transformation_transformed_dir,training_pipeline.TEST_FILE_NAME.replace("csv","npy"))
+
+        self.transformed_obj_file_path = os.path.join(
+            self.data_transformation_dir,training_pipeline.DATA_TRANSFORMATION_TRANSFORMED_OBJ_DIR,
+            training_pipeline.TRANSFORMED_OBJ_NAME)
+
+
+class ModelTrainerConfig:
+    def __init__(self,training_pipeline_config:TrainingPipelineConfig):
+        self.training_pipeline_config = training_pipeline_config
+
+        self.model_trainer_dir = os.path.join(self.training_pipeline_config.artifact_dir,training_pipeline.MODEL_TRAINER_DIR)
+        self.trained_model = os.path.join(self.model_trainer_dir,training_pipeline.MODEL_TRAINER_TRAINED_DIR,
+                                          training_pipeline.TRAINED_MODEL_NAME)
+        
+        self.model_trainer_report_dir = os.path.join(self.model_trainer_dir,training_pipeline.MODEL_TRAINER_REPORT_DIR,
+                                                     training_pipeline.MODEL_TRAINED_REPORT)
+        
+        self.best_model_report_path = os.path.join(self.model_trainer_dir,training_pipeline.MODEL_TRAINER_REPORT_DIR,
+                                                   training_pipeline.MODEL_TRAINER_BEST_MODEL_REPORT)
+
+
+
+        
         
         
