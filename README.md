@@ -6,6 +6,9 @@ Customer churn is one of the biggest challenges faced by subscription-based busi
 
 This project builds an end-to-end **Machine Learning Customer Churn Prediction System** that predicts whether a telecom customer is likely to churn based on customer demographics, services, billing information, and engineered features.
 
+Live Demo
+https://customer-churn-prediction-1-3czo.onrender.com/
+
 The project follows a complete **production-level ML pipeline** including:
 
 - Data ingestion
@@ -347,7 +350,7 @@ Churn Result
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Customer-Churn-Prediction.git
+git clone https://github.com/Diksha-ydv/Customer-Churn-Prediction
 Navigate to Project Directory
 cd Customer-Churn-Prediction
 Create Virtual Environment
@@ -381,7 +384,7 @@ python app.py
 
 Open browser:
 
-http://127.0.0.1:5000/
+http://127.0.0.1:5001/
 🧰 Technologies Used
 Programming Language
 Python
@@ -428,7 +431,7 @@ https://github.com/Diksha-ydv
 If you found this project useful, consider giving it a ⭐ on GitHub.
 
 
-This version is cleaner for an **ML Engineer/Data Science internship portfolio** and clearly shows that you built a complete production pipeline rather than only a notebook model.
+
 
 
 
