@@ -347,93 +347,144 @@ Churn Result
 # 🛠 Installation
 
 
-## Clone Repository
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Diksha-ydv/Customer-Churn-Prediction
-Navigate to Project Directory
+git clone https://github.com/Diksha-ydv/Customer-Churn-Prediction.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
 cd Customer-Churn-Prediction
-Create Virtual Environment
+```
+
+### 3. Create a Virtual Environment
+
+```bash
 python -m venv venv
-Activate Environment
+```
 
-Mac/Linux:
+### 4. Activate the Virtual Environment
 
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**macOS / Linux**
+
+```bash
 source venv/bin/activate
-Install Dependencies
+```
+
+### 5. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-▶️ Running the Project
-Step 1: Train Model
+```
 
-Run:
+---
 
+# ▶️ Running the Project
+
+### Step 1: Train the Model
+
+Run the training pipeline:
+
+```bash
 python main.py
+```
 
-This will execute:
+This will perform:
 
-Data ingestion
-Validation
-Transformation
-Model training
-Model saving
-Step 2: Start Flask Application
+- Data Ingestion
+- Data Validation
+- Data Transformation
+- Feature Engineering
+- Model Training
+- Model Evaluation
+- Threshold Tuning
+- Save the Best Model & Preprocessor
 
-Run:
+---
 
+### Step 2: Start the Flask Application
+
+```bash
 python app.py
+```
 
-Open browser:
+Open your browser and visit:
 
+```text
 http://127.0.0.1:5001/
-🧰 Technologies Used
-Programming Language
-Python
-Data Processing
-Pandas
-NumPy
-Machine Learning
-Scikit-learn
-XGBoost
-CatBoost
-Imbalanced-learn
-Database
-MongoDB
-Deployment
-Flask
-Model Serialization
-Pickle
-📈 Results
+```
 
-The best performing model was selected based on:
+---
 
-Highest F1 Score
-Balanced precision and recall
-Improved churn detection capability
+# 🛠️ Technologies Used
 
-Threshold tuning further improved the model's ability to identify churn customers.
+### Programming Language
+- Python
 
-🔮 Future Improvements
-Deploy application on AWS/Azure
-Add Docker support
-Add MLflow experiment tracking
-Add CI/CD pipeline
-Add model monitoring
-Add automated retraining pipeline
-👩‍💻 Author
+### Data Processing
+- Pandas
+- NumPy
 
-Diksha Yadav
+### Machine Learning
+- Scikit-learn
+- XGBoost
+- CatBoost
+- Imbalanced-learn
 
-GitHub:
+### Database
+- MongoDB
 
-https://github.com/Diksha-ydv
-⭐ Support
+### Web Framework
+- Flask
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+### Model Serialization
+- Pickle
 
+### Deployment
+- Render
 
+---
 
+# 📈 Results
 
+The final model was selected based on:
 
+- High F1 Score
+- Balanced Precision and Recall
+- Improved Churn Detection
+- Threshold Tuning for Better Classification Performance
 
+---
 
+# 🔮 Future Improvements
 
+- Deploy on AWS or Azure
+- Add Docker Support
+- Integrate MLflow for Experiment Tracking
+- Implement CI/CD Pipeline
+- Add Model Monitoring
+- Enable Automated Model Retraining
+
+---
+
+# 👩‍💻 Author
+
+**Diksha Yadav**
+
+GitHub: https://github.com/Diksha-ydv
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
